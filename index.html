@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+      Javascript Game
+    </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> 
+  <style>
+      body{
+    background: #f0f0f0;
+    margin:100px;
+}
+    #word
+    {
+    margin-bottom: 0;
+    font-family: 'Cinzel', serif;
+  }
+  h1
+  {
+      text-color:black;
+      text-align: center;
+  }
+  #result
+  {
+    color: blue;
+  }
+  .progress .progress-bar
+  {
+    color: blue;
+  transition:width 0s ;
+  transition-timing-function:cubic-bezier(0,.95,0,.95);
+}
+  .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .btn-outline-secondary:not(:disabled):not(.disabled):active:focus{
+   box-shadow: none; 
+  }
+   </style>
+</head>
+    <body>
+            <h1>Javascript Game</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sd-12">
+        <div class="row">
+          <div class="col-4 pr-1 px-sm-3">
+              <button type="button" id="easymode" class="btn btn-outline-secondary btn-block" >Easy Mode</button></div>
+                <div class="col-4 px-1 px-sm-3">
+              <button type="button" id="mediummode" class="btn btn-outline-secondary btn-block" >Medium Mode</button></div>
+          <div class="col-4 pl-1 px-sm-3">
+              <button type="button" id="hardmode" class="btn btn-outline-secondary btn-block" >Hard Mode</button></div>
+                <div class="col-12 text-center pt-5">
+              <div class="card card-body"><h2 id="word"></h2></div></div>
+              <div class="col-12 text-center pt-4">Score: <strong id="score">0</strong></div>
+         <div class="col-12 text-center pt-5">
+             <h6>Enter the text here</h6>
+              <input type="text"class="text-center" id="result"></div>
+        </div>
+        <div class="progress mt-5 bar">
+                 <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="javascript.js"></script>
+</body>
+</html>
